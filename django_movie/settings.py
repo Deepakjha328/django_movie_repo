@@ -81,10 +81,12 @@ DATABASES = {
         'NAME': 'movie',
         'HOST': '127.0.0.1',
         'PORT': '3306',
-        'USER': '',
-        'PASSWORD': '',
+        'USER': 'root',
+        'PASSWORD': 'Deep1234@',
     }
 }
+
+
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
