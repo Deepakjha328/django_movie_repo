@@ -58,10 +58,3 @@ def movie_details(request,pk):
         return JsonResponse({'message': 'Movie was deleted successfully!'}, status=status.HTTP_204_NO_CONTENT)
 
 
-@api_view(['GET'])
-def movie_released(request):
-    movie = Movie.objects.filter(released=True)
-
-    if request.method == 'GET':
-        movie_serializer = MovieSerializer(movie, many=True)
-        return JsonResponse(movie_serializer.data, safe=False)
